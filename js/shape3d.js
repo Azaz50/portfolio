@@ -32,8 +32,8 @@ class Shape3D {
         const perspective = 800;
         const scale = perspective / (perspective + z);
         return {
-            x: this.canvas.width/2.5 + x * scale,
-            y: this.canvas.height/2.5 + y * scale,
+            x: this.canvas.width/2 + x * scale,
+            y: this.canvas.height/2 + y * scale,
             scale: scale
         };
     }
@@ -89,8 +89,8 @@ class Shape3D {
     const rotatedVertices = vertices.map(v => {
         const rotated = this.rotatePoint(v.x, v.y, v.z);
         return this.project(
-            rotated.x + this.x - this.canvas.width/1,
-            rotated.y + this.y - this.canvas.height/1,
+            rotated.x + this.x - this.canvas.width/2,
+            rotated.y + this.y - this.canvas.height/2,
             rotated.z + this.z
         );
     });
@@ -141,8 +141,8 @@ class Shape3D {
     const rotatedVertices = vertices.map(v => {
         const rotated = this.rotatePoint(v.x, v.y, v.z);
         return this.project(
-            rotated.x + this.x - this.canvas.width/1,
-            rotated.y + this.y - this.canvas.height/1,
+            rotated.x + this.x - this.canvas.width/2,
+            rotated.y + this.y - this.canvas.height/2,
             rotated.z + this.z
         );
     });
@@ -167,7 +167,7 @@ class Shape3D {
         // Fill with gradient glow
         let gradient = ctx.createRadialGradient(
             rotatedVertices[face[0]].x, rotatedVertices[face[0]].y, 5,
-            rotatedVertices[face[0]].x, rotatedVertices[face[0]].y, this.size * 1
+            rotatedVertices[face[0]].x, rotatedVertices[face[0]].y, this.size * 2
         );
         gradient.addColorStop(0, this.color);
         gradient.addColorStop(1, "rgba(0, 0, 0, 0.2)");
@@ -222,8 +222,8 @@ function init3DShapes() {
     let mouseX = 0;
     let mouseY = 0;
     canvas.addEventListener('mousemove', (e) => {
-        mouseX = e.clientX - canvas.width/8;
-        mouseY = e.clientY - canvas.height/8;
+        mouseX = e.clientX - canvas.width/2;
+        mouseY = e.clientY - canvas.height/2;
         
         shapes.forEach(shape => {
             const dx = mouseX - shape.x;
