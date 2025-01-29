@@ -203,7 +203,7 @@ function init3DShapes() {
 
     const ctx = canvas.getContext('2d');
     const shapes = [];
-    const numberOfShapes = 20;
+    const numberOfShapes = 5;
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
