@@ -3,7 +3,7 @@ class Particle {
         this.canvas = canvas;
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
-        this.size = Math.random() * 3 + 1;
+        this.size = Math.random() * 4 + 1;
         this.speedX = Math.random() * 3 - 1.5;
         this.speedY = Math.random() * 3 - 1.5;
         
@@ -62,7 +62,7 @@ function initParticles() {
 
     const ctx = canvas.getContext('2d');
     let particles = [];
-    const numberOfParticles = 50;
+    const numberOfParticles = 40;
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
