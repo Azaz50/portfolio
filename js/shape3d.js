@@ -13,7 +13,7 @@ class Shape3D {
         this.rotationSpeedX = (Math.random() - 0.5) * 0.02;
         this.rotationSpeedY = (Math.random() - 0.5) * 0.02;
         this.rotationSpeedZ = (Math.random() - 0.5) * 0.02;
-        this.size = Math.random() * 20 + 10;
+        this.size = Math.random() * 5 + 5;
         this.type = Math.random() > 0.5 ? 'cube' : 'pyramid';
         
         const colors = [
@@ -203,7 +203,7 @@ function init3DShapes() {
 
     const ctx = canvas.getContext('2d');
     const shapes = [];
-    const numberOfShapes = 5;
+    const numberOfShapes = 15;
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
