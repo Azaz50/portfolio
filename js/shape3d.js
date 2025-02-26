@@ -13,12 +13,25 @@ class Shape3D {
         this.rotationSpeedX = (Math.random() - 0.5) * 0.02;
         this.rotationSpeedY = (Math.random() - 0.5) * 0.02;
         this.rotationSpeedZ = (Math.random() - 0.5) * 0.02;
+<<<<<<< HEAD
         this.size = Math.random() * 20 + 10;
+=======
+        this.size = Math.random() * 5 + 5;
+>>>>>>> 11411d6416278b7bca12bead3a31599fc26d6c94
         this.type = Math.random() > 0.5 ? 'cube' : 'pyramid';
         
         const colors = [
             '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEEAD',
+<<<<<<< HEAD
             '#D4A5A5', '#9B59B6', '#3498DB', '#E74C3C', '#2ECC71'
+=======
+            '#D4A5A5', '#9B59B6', '#3498DB', '#E74C3C', '#2ECC71',
+            '#F1C40F', 
+            '#1ABC9C',
+            '#E67E22', 
+            '#BE2EDD', 
+            '#0652DD' 
+>>>>>>> 11411d6416278b7bca12bead3a31599fc26d6c94
         ];
         this.color = colors[Math.floor(Math.random() * colors.length)];
     }
@@ -198,7 +211,11 @@ function init3DShapes() {
 
     const ctx = canvas.getContext('2d');
     const shapes = [];
+<<<<<<< HEAD
     const numberOfShapes = 20;
+=======
+    const numberOfShapes = 15;
+>>>>>>> 11411d6416278b7bca12bead3a31599fc26d6c94
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
