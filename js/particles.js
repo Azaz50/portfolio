@@ -62,7 +62,7 @@ function initParticles() {
 
     const ctx = canvas.getContext('2d');
     let particles = [];
-    const numberOfParticles = 40;
+    const numberOfParticles = 12;
 
     function resizeCanvas() {
         canvas.width = window.innerWidth;
