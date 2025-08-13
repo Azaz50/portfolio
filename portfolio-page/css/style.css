@@ -1130,13 +1130,15 @@ footer {
   .header-nav.open {
     left: 0;
   }
-  .nav-toggle {
-    display: block !important;
-    position: fixed;
-    top: 18px;
-    right: 0;
-    left: auto;
-    margin-right: 10px;
+.nav-toggle {
+    display: flex !important;
+    align-items: center;   /* vertical center */
+    justify-content: center; /* horizontal center */
+    position: absolute;    /* fixed ke jagah absolute use karo */
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); /* exact vertical center */
+    margin: 0;
     z-index: 10000;
     background: #fff;
     border-radius: 50%;
@@ -1147,31 +1149,23 @@ footer {
     height: 40px;
     border: none;
     outline: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateX(-10%);
   }
-  /* Improved Hamburger icon styles for mobile navbar */
+  
+  /* Hamburger lines */
   .hamburger {
-    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    gap: 6px;
-    z-index: 10001;
+    width: 24px;
+    height: 18px;
+    gap: 5px;
   }
   .hamburger span {
-    display: block;
-    width: 24px;
+    width: 100%;
     height: 3px;
     background: #7155EF;
     border-radius: 2px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
     transition: all 0.3s;
   }
   .header-ul {
@@ -1191,6 +1185,7 @@ footer {
     padding: 16px 24px;
     color: #222;
   }
+
 }
 @media (min-width: 901px) {
   .nav-toggle {
@@ -1206,3 +1201,4 @@ footer {
     display: flex !important;
   }
 }
+
