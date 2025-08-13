@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Ronit Singh || Software Developer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./portfolio-page/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="./portfolio-page/js/bootstrap.bundle.js"></script>
+
+    <!--Custom Style  -->
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/mobile.css" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/particles.css" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/timeline.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/aos.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon Meta Tags -->
+    <link rel="shortcut icon" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" href="./portfolio-page/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./portfolio-page/img/favicon.ico">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Ronit Singh || Software Developer">
+    <meta property="og:description" content="Hello! I'm Ronit Singh, a passionate Software Developer with over 2 years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Next.js), PHP, Node.js, Python (Django), and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imronit.in">
+    <meta property="og:image" content="https://imronit.in/portfolio-page/img/ronit_singh_banner.png">
+    <meta property="og:site_name" content="Ronit Singh Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Ronit Singh's Profile Picture">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ronit Singh || Software Developer">
+    <meta name="twitter:description" content="Hello! I'm Ronit Singh, a passionate Software Developer with over 2 years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Next.js), PHP, Node.js, Python (Django), and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta name="twitter:image" content="https://imronit.in/portfolio-page/img/ronit_singh_banner.png">
+    <meta name=" twitter:site" content="@imronit1703">
+    <meta name="twitter:creator" content="@imronit1703">
+
+    <!-- Basic Meta Tags -->
+    <meta name="description" content="Hello! I'm Ronit Singh, a passionate Software Developer with over 2 years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Next.js), PHP, Node.js, Python (Django), and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta name="keywords" content="Ronit Singh, Software Developer, Web Developer, Portfolio, HTML, CSS, JavaScript, React, Node.js, PHP, Laravel, Django, MongoDB, MySQL">
+    <meta name="author" content="Ronit Singh">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#2b2c2f">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://imronit.in">
+
+    <!-- Google Verification for Search Console -->
+    <meta name="google-site-verification" content="A4et037SyiuQflzc_GW_F9KM80GsqNm_CRmiupduofs">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S1TMKWQFB"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1S1TMKWQFB');
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover table-bordered">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Jquery -->
+    <script src="./portfolio-page/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("./portfolio-page/php/queries.json", function (data) {
+                let queries = data;
+                if (queries.length) {
+                    queries.forEach(query => {
+                        $(".table tbody").append(`
+                            <tr>
+                                <th scope="row">${query.date}</th>
+                                <td>${query.name}</td>
+                                <td>${query.email}</td>
+                                <td>${query.mobile}</td>
+                                <td>${query.message}</td>
+                            </tr>
+                        `)
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

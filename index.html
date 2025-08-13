@@ -1,845 +1,651 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Personal Portfolio Website</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <!-- font awesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-  <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-  <!-- default color css  -->
-  <link rel="stylesheet" href="css/skins/color-1.css" disabled>
-  <link rel="stylesheet" href="css/style-switcher.css">
-  <!-- theme colors -->
-  <link rel="stylesheet" class="alternate-style" title="color-1" href="/css/skins/color-1.css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="color-2" href="/css/skins/color-2.css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="color-3" href="/css/skins/color-3.css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="color-4" href="/css/skins/color-4.css">
-  <link rel="stylesheet" class="alternate-style" title="color-5" href="/css/skins/color-5.css" disabled>
-  <!-- fav icon  -->
-  <link rel="shortcut icon" href="favicon.ico">
+    <meta charset="utf-8" />
+    <title>Azaz Mohammad || Software Developer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./portfolio-page/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="./portfolio-page/js/bootstrap.bundle.js"></script>
+
+    <!--Custom Style  -->
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/style.css?v=1.1" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/mobile.css?v=1.1" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/particles.css" />
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/timeline.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" type="text/css" href="./portfolio-page/css/aos.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon Meta Tags -->
+    <link rel="shortcut icon" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" href="./portfolio-page/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./portfolio-page/img/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./portfolio-page/img/favicon.ico">
+
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Azaz Mohammad || Software Developer">
+    <meta property="og:description" content="Hello! I'm Azaz Mohammad, a passionate Software Developer with over 1.5+ years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Vue.js), PHP, Laravel, Node.js, Express.js, and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azaz50.github.io/portfolio/">
+    <!-- <meta property="og:image" content="https://imronit.in/portfolio-page/img/ronit_singh_banner.png"> -->
+    <meta property="og:site_name" content="Azaz Mohammad Portfolio">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Azaz Mohammad's Profile Picture">
+
+    <!-- Twitter Card Meta Tags -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Azaz Mohammad || Software Developer">
+    <meta name="twitter:description" content="Hello! I'm Azaz Mohammad, a passionate Software Developer with over 2 years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Next.js), PHP, Node.js, Python (Django), and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta name="twitter:image" content="https://imronit.in/portfolio-page/img/ronit_singh_banner.png">
+    <meta name=" twitter:site" content="@imronit1703">
+    <meta name="twitter:creator" content="@imronit1703"> -->
+
+    <!-- Basic Meta Tags -->
+    <meta name="description" content="Hello! I'm Azaz Mohammad, a passionate Software Developer with over 2 years of experience in building innovative and scalable tech solutions. I specialize in both frontend and backend development, leveraging my skills in JavaScript (React.js, Next.js), PHP, Node.js, Python (Django), and database management with MySQL and MongoDB. I also bring expertise in DevOps, using Linux, Git, and deployment platforms like Hostinger to ensure smooth project delivery.">
+    <meta name="keywords" content="Azaz Mohammad, Software Developer, Web Developer, Portfolio, HTML, CSS, JavaScript, React, Node.js, PHP, Laravel, Django, MongoDB, MySQL">
+    <meta name="author" content="Azaz Mohammad">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#2b2c2f">
+
+    <!-- Canonical URL -->
+    <!-- <link rel="canonical" href="https://imronit.in"> -->
+
+    <!-- Google Verification for Search Console -->
+    <!-- <meta name="google-site-verification" content="A4et037SyiuQflzc_GW_F9KM80GsqNm_CRmiupduofs"> -->
+
+    <!-- Sitemap -->
+    <!-- <link rel="sitemap" type="application/xml" title="Sitemap" href="https://imronit.in/sitemap.xml" /> -->
+
+    <!-- Google tag (gtag.js) -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1S1TMKWQFB"></script> -->
+    <!-- <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-1S1TMKWQFB');
+    </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6831481744639333" crossorigin="anonymous"></script> -->
 </head>
 
-<body class="dark">
-
-  <!-- ========== Start pre loader ========== -->
-  <div class="preloader">
-    <div class="box">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-  <!-- ========== End pre loader ========== -->
-
-  <!-- start header  -->
-  <div class="header">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="logo">
-          <a href="index.html">a</a>
+<body>
+    <header>
+        <h1 class="eb-garamond">Azaz Mohammad</h1>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-toggle">
+          <span class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
-        <div class="hamburger-btn outer-shadow hover-in-shadow">
-          <i class="fas fa-bars"></i>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end  -->
+    </header>
 
-  <!-- navigation menu start  -->
-  <nav class="nav-menu">
-    <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
-    <div class="nav-menu-inner">
-      <ul>
-        <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
-        <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
-        <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
-        <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
-        <!-- <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Testimonial</a></li> -->
-        <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
-      </ul>
-    </div>
-    <p class="copyright-text">&copy; 2023 This is demo</p>
+    <main>
+        <!-- Home Section Starts Here -->
+        <section id="home">
+            <div class="particles purple"></div>
+            <div class="particles medium-blue"></div>
+            <div class="particles light-blue"></div>
+            <div class="particles red"></div>
+            <div class="particles orange"></div>
+            <div class="particles yellow"></div>
+            <div class="particles cyan"></div>
+            <div class="particles light-green"></div>
+            <div class="particles lime"></div>
+            <div class="particles magenta"></div>
+            <div class="particles lightish-red"></div>
+            <div class="particles pink"></div>
 
-    <div class="fade-out-effect">
-
-    </div>
-  </nav>
-  <!-- end  -->
-
-  <!-- home section start  -->
-  <section class="home-section section active" id="home">
-    <!-- effect wrap -->
-    <div class="effect-wrap">
-      <div class="effect effect-1">
-
-      </div>
-      <div class="effect effect-2">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div class="effect effect-3">
-      </div>
-      <div class="effect effect-4">
-      </div>
-      <div class="effect effect-5">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <!-- end -->
-    <div class="container">
-      <div class="row full-screen align-items-center">
-        <div class="home-text">
-          <p>Hello, </p>
-          <!-- ========== Start typing animation ========== -->
-          <div id="auto-typing-animation">
-            <p>I'm <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-          </div>
-          <!-- ========== End typing animation ========== -->
-          <h1>Full Stack Web Developer</h1>
-          <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
-        </div>
-
-        <div class="home-image">
-          <div class="img-box inner-shadow">
-            <img src="./img/profile-pic.jpg" class="outer-shadow" alt="profile-pic" srcset="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end -->
-
-  <!-- about section  -->
-  <section class="about-section section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <div class="data-heading">MAIN INFO</div>
-          <h2>About me</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="about-img">
-          <div class="img-box inner-shadow">
-            <img src="./img/profile-pic.jpg" alt="" class="outer0shadow">
-          </div>
-          <!-- social icons -->
-          <div class="social-links">
-
-
-
-            <a href="https://github.com/Azaz50" target="_nextTab" class="outer-shadow hover-in-shadow link-card"
-              data-tilt data-tilt-scale="1.1"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/azaz194032?t=54uwaL8Ah0UrP5lHGotnJQ&s=09" target="_nextTab"
-              class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i
-                class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/azaz194032?igsh=Y2d5dDg2ZXpvN2Zn" target="_nextTab"
-              class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/azaz-mohammad/" target="_nextTab"
-              class="outer-shadow hover-in-shadow link-card" data-tilt data-tilt-scale="1.1"><i
-                class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
-        <div class="about-info">
-          <p class="about-info-inner">
-            <!-- content will fetch from  "TODO: js/autoTypingAnimation " -->
-          </p>
-          <!-- this is a just demo text  -->
-
-          <!-- <span>Hi, this is a demo name</span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius officia ea ut vonsectetur adipisicing elit. Illo voluptatum iste, tempora rem obcaecati omnis delectus sunt, consequuntur, et ut quasi aperiam assumenda! <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex beatae reprehenderit vero maiores dignissimos error vitae, optio inventore explicabo quia officiis magni delectus? -->
-
-
-          <a href="Azaz_Mohammad_Resume.pdf" class="btn-1 outer-shadow hover-in-shadow" target="next_page">Download
-            CV</a>
-          <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
-        </div>
-      </div>
-      <!-- about section start -->
-      <div class="row">
-        <div class="about-tabs">
-          <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
-          <span class="tab-item" data-target=".experience">experience</span>
-          <span class="tab-item" data-target=".education">education</span>
-        </div>
-      </div>
-      <!-- end -->
-      <!-- skill section start  -->
-      <div class="row">
-        <div class="skills tab-content active">
-          <!-- skill item -->
-          <div class="row">
-
-            <!-- ========== Start skills ========== -->
-            <div class="skill-item">
-              <p>HTML & CSS</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px)">
-                  <!-- <span>70%</span> -->
+            <div class="h-100 home-main-container">
+                <div class="left-panel" data-aos="zoom-in">
+                    <div class="mx-4">
+                        <h4>Hello,</h4>
+                        <h2 id="ronitsingh">I'm Azaz Mohammad</h2>
+                    </div>
+                    <h3 class="mx-4 mt-3">Crafting User-Friendly & High-Performance Web Solutions</h3>
                 </div>
-              </div>
+                <div class="right-panel">
+                    <div class="img-box">
+                        <img src="./portfolio-page/img/profile-pic.jpeg" alt="profile-pic" srcset="">
+                    </div>
+                </div>
             </div>
 
 
-            <div class="skill-item">
-              <p>JavaScript</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-                  <!-- <span>60%</span> -->
+        </section>
+        <!-- Home Section Ends Here -->
+
+        <!-- About Section Starts Here -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-main-container">
+                <div class="right">
+                    <div class="about-me-img-div effect1 mb-2">
+                        <img src="./portfolio-page/img/profile-pic.jpeg" alt="" />
+                    </div>
+                    <div class="center-text">
+                        <h4>Software Developer</h4>
+                        <p>(Tsui Tech Solutions LLP.)</p>
+                    </div>
                 </div>
-              </div>
+                <div class="right-panel">
+                    <div class="about-me-text">
+                        <p>Hello! I'm <span class="fw-bold">Azaz Mohammad</span>, a dynamic Software Developer with <span class="fw-bold">1.5+ years of experience</span> crafting innovative, scalable digital solutions. I excel in full-stack development, specializing in <span class="fw-bold">modern JavaScript frameworks</span> (React.js, Vue.js), <span class="fw-bold">backend technologies</span> (Node.js, PHP, Laravel), and comprehensive <span class="fw-bold">database management</span> with MySQL and MongoDB.</p>
+                        
+                        <!-- <p>My technical expertise extends to <span class="fw-bold">DevOps practices</span>, utilizing Docker, AWS, and various deployment platforms to ensure robust, high-performance applications. I'm proficient in <span class="fw-bold">mobile development</span> with React Native and have a strong foundation in <span class="fw-bold">UI/UX design</span> using Figma and modern CSS frameworks.</p> -->
+                        
+                        <p>I started my career with a 6-month internship at Appzillians Pvt. Ltd., followed by 1 year as a Jr. Full Stack Developer, where I contributed to projects like the Tripo ride and delivery platform and other scalable web solutions.
+
+                            Since April 2025, I have been working at Tsui Tech Solutions LLP as a Full Stack Developer, building dynamic and responsive applications with React.js on the frontend and Node.js on the backend. I am driven by a passion for solving complex development challenges and delivering seamless, high-performance digital experiences.</p>
+                        
+                        <!-- <p>Beyond my corporate role, I'm an active <span class="fw-bold">freelancer and content creator</span>, helping businesses transform their digital presence. From enterprise-grade applications to intuitive mobile apps, I bring technical excellence and creative problem-solving to every project.</p>
+                        
+                        <p><span class="fw-bold">Ready to collaborate?</span> Let's discuss how we can bring your next innovative project to life!</p> -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- About Section Ends Here -->
+
+        <!-- Skills Section Starts Here -->
+        <section id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills-container">
+                <!-- Frontend Development -->
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h5 class="card-title">Frontend/App Development</h5>
+                        <div class="card-skill-div">
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/html.png" alt="">
+                                <p class="skill-icon-text">Html</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/css.png" alt="">
+                                <p class="skill-icon-text">Css</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/js.png" alt="">
+                                <p class="skill-icon-text">Javascript</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/bootstrap.png" alt="">
+                                <p class="skill-icon-text">Bootstrap</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/reactjs.png" alt="">
+                                <p class="skill-icon-text">React Js</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/nextjs.png" alt="">
+                                <p class="skill-icon-text">Next Js</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/tailwind.png" alt="">
+                                <p class="skill-icon-text">Tailwind Css</p>
+                            </div>
+                            <!-- <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/jquery.png" alt="">
+                                <p class="skill-icon-text">jQuery</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/figma.png" alt="">
+                                <p class="skill-icon-text">Figma</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/reactjs.png" alt="">
+                                <p class="skill-icon-text">React Native</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h5 class="card-title">Backend Development</h5>
+                        <div class="card-skill-div">
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/php.png" alt="">
+                                <p class="skill-icon-text">Php</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/laravel.png" alt="">
+                                <p class="skill-icon-text">Laravel</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/nodejs.png" alt="">
+                                <p class="skill-icon-text">Node Js</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/expressjs.png" alt="">
+                                <p class="skill-icon-text">Express Js</p>
+                            </div>
+                            <!-- <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/python.png" alt="">
+                                <p class="skill-icon-text">Django</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/php.png" alt="">
+                                <p class="skill-icon-text">Hyperbase</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database & Devops -->
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h5 class="card-title">Database & Devops</h5>
+                        <div class="card-skill-div">
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/mysql.png" alt="">
+                                <p class="skill-icon-text">Mysql</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/mongodb.png" alt="">
+                                <p class="skill-icon-text">MongoDb</p>
+                            </div>
+                            <!-- <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/firebase.png" alt="">
+                                <p class="skill-icon-text">Firebase</p>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/git.png" alt="">
+                                <p class="skill-icon-text">Git & Github</p>
+                            </div>
+                            <!-- <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/bitbucket.png" alt="">
+                                <p class="skill-icon-text">Bitbucket</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/jira.png" alt="">
+                                <p class="skill-icon-text">Jira Space</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/aws.png" alt="">
+                                <p class="skill-icon-text">Aws</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/vercel.png" alt="">
+                                <p class="skill-icon-text">Vercel</p>
+                            </div> -->
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/hostinger.png" alt="">
+                                <p class="skill-icon-text">Hostinger</p>
+                            </div>
+                            <!-- <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/docker.png" alt="">
+                                <p class="skill-icon-text">Docker</p>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h5 class="card-title">Programming Languages</h5>
+                        <div class="card-skill-div">
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/c.png" alt="">
+                                <p class="skill-icon-text">C Lang..</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/cpp.png" alt="">
+                                <p class="skill-icon-text">C++ Lang..</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/java.png" alt="">
+                                <p class="skill-icon-text">Java</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/python.png" alt="">
+                                <p class="skill-icon-text">Python</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/dsa.png" alt="">
+                                <p class="skill-icon-text">DSA</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img class="skill-icon-img" src="./portfolio-page/img/icons/shell.png" alt="">
+                                <p class="skill-icon-text">Shell Scripting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+        </section>
+        <!-- Skills Section Ends Here -->
 
-            <div class="skill-item">
-              <p>PHP & Laravel</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(75% - 14px);">
-
+        <!-- Services Section Starts Here -->
+        <section id="services">
+            <h2 class="section-title">Services</h2>
+            <div class="services-container">
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-code"></i></div>
+                        <h5 class="card-title">Full-Stack Web Development</h5>
+                        <p class="card-subtitle">End-to-End Digital Solutions</p>
+                        <ul>
+                            <li>Build powerful, scalable web applications with modern technologies like React.js, Vue.js, Node.js, and Laravel. From interactive frontends to robust backend APIs, I deliver complete solutions with seamless database integration (MySQL, MongoDB) and cloud deployment.</li>
+                        </ul>
+                    </div>
                 </div>
-              </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h5 class="card-title">Tech Guide(Documentation)</h5>
+                        <p class="card-subtitle">Learn, Build, and Grow</p>
+                        <ul>
+                            <li>Providing Insightful Tutorial And Tech Guides To Empower Others With Knowledge, Fostering Learnig And Growth In Tech Community</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-cloud"></i></div>
+                        <h5 class="card-title">DevOps & Cloud Solutions</h5>
+                        <p class="card-subtitle">Efficient Deployment & Version Control</p>
+                        <ul>
+                            <li>I manage application deployment and hosting using Hostinger servers and ensure smooth version control with Git. My focus is on maintaining reliable, secure, and organized codebases while deploying applications efficiently to deliver consistent performance.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-palette"></i></div>
+                        <h5 class="card-title">UI/UX Design & Prototyping</h5>
+                        <p class="card-subtitle">User-Centered Design Excellence</p>
+                        <ul>
+                            <li>I offer services including user research, wireframing, and prototyping to create intuitive and engaging interfaces. I focus on enhancing user satisfaction by improving usability, accessibility, and interaction design.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fa-solid fa-code"></i></div>
+                        <h5 class="card-title">Backend Development</h5>
+                        <p class="card-subtitle">Empowering Next-Gen Developers</p>
+                        <ul>
+                            <li>I offer services such as building robust server-side applications, database design and management, and API development. I ensure secure, efficient, and scalable solutions using technologies like Node.js, Express, and MongoDB.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <div class="card-logo"><i class="fas fa-search"></i></div>
+                        <h5 class="card-title">Clean Code</h5>
+                        <p class="card-subtitle">Neat & Clean Code</p>
+                        <ul>
+                            <li>Commited To Writting Clean And Maintainable Code, Ensuring Efficiency, Reliability, and Scalability in Every Project. </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+        </section>
+        <!-- Services Section Ends Here -->
 
-            <div class="skill-item">
-              <p>React Js</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
+        <!-- Portfolio Section Starts Here -->
+        <section id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <ul class="portfolio-nav">
+                <li class="portfolio-nav-item active" data-type="education">Education</li>
+                <li class="portfolio-nav-item" data-type="experience">Experience</li>
+                <li class="portfolio-nav-item" data-type="projects">Projects</li>
+                <li class="portfolio-nav-item" data-type="certificates">Certificates</li>
+                <!-- <li class="portfolio-nav-item" data-type="youtube">Youtube</li> -->
 
-                </div>
-              </div>
-            </div>
+            </ul>
+            <div class="portfolio-container">
+                <ul class="timeline portfolio-block active" data-type="education">
+                    <li style="--accent-color:#FBCA3E" data-aos="zoom-in">
+                        <div class="date">2023, B.Tech CSE</div>
+                        <div class="title">Aliah University(Newtown Kolkata).</div>
+                        <div class="descr">Bachelor of Computer Applications with exceptional academic performance. Mastered programming fundamentals in C, C++, Java, and Python. Developed strong foundation in web development, database design, and software development lifecycle methodologies.</div>
+                    </li>
+                    <li style="--accent-color:#E24A68" data-aos="zoom-in">
+                        <div class="date">2019, Higher Secondary</div>
+                        <div class="title">Hazinagar Adarsha Hindi Vidyalaya | Science Stream</div>
+                        <div class="descr">Completed higher secondary education with Physics, Chemistry, Mathematics, and Computer Science. Built analytical thinking and mathematical problem-solving skills that became the foundation for programming and logical reasoning in software development.</div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C" data-aos="zoom-in">
+                        <div class="date">2017, Secondary</div>
+                        <div class="title">Hazinagar Adarsha Hindi Vidyalaya | Madhyamik</div>
+                        <div class="descr">Completed secondary education with strong performance in mathematics and science subjects. Developed fundamental analytical skills and introduced to basic computer concepts that sparked interest in technology and programming.</div>
+                    </li>
+                </ul>
 
-            <div class="skill-item">
-              <p>MongoDb</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Express Js</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(65% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Node Js</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(75% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Mysql</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(65% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Vue Js</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-
-                </div>
-              </div>
-            </div>
+                <ul class="timeline portfolio-block" data-type="experience">
+                    <li style="--accent-color:#41516C" data-aos="zoom-in">
+                        <div class="date">04/25 - Present, Full Stack Developer</div>
+                        <div class="title">Tsui Tech Solutions LLP</div>
+                        <div class="descr">
+                            Working as a Full Stack Developer, building dynamic and responsive web applications using 
+                            <strong>React.js</strong> for the frontend and <strong>Node.js (Express.js)</strong> for the backend. 
+                            Responsible for developing scalable APIs, optimizing performance, and delivering user-friendly digital solutions.
+                        </div>
+                    </li>
+                    <li style="--accent-color:#E24A68" data-aos="zoom-in">
+                        <div class="date">03/24 - 04/25, Jr. Full Stack Developer</div>
+                        <div class="title">Appzillians Pvt. Ltd.</div>
+                        <div class="descr">
+                            Developed and maintained web applications using <strong>PHP Laravel</strong> and <strong>Vue.js</strong>. 
+                            Implemented dynamic routing, secure API integrations, and responsive UI components to enhance user experience. 
+                            Collaborated with team members to deliver scalable and high-performance solutions.
+                        </div>
+                    </li>
+                    <li style="--accent-color:#1B5F8C" data-aos="zoom-in">
+                        <div class="date">10/23 - 04/24, PHP Developer Intern</div>
+                        <div class="title">Appzillians Pvt. Ltd.</div>
+                        <div class="descr">
+                            Completed a 6-month internship focused on backend development with <strong>PHP Laravel</strong> and frontend development with <strong>Vue.js</strong>. 
+                            Assisted in coding, debugging, and testing features, gaining hands-on experience in full stack development.
+                        </div>
+                    </li>
+                </ul>
 
 
-            <div class="skill-item">
-              <p>Bootstrap</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
+                <!-- <div class="portfolio-block" data-type="projects">
 
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Tailwind CSS</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>C Language</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(75% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Java</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(80% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Python</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(60% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>Git & GitHub</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(70% - 14px);">
-
-                </div>
-              </div>
-            </div>
-
-            <div class="skill-item">
-              <p>DSA</p>
-              <div class="progress inner-shadow">
-                <div class="progress-bar" style="width: calc(65% - 14px);">
-
-                </div>
-              </div>
-            </div>
-            <!-- ========== End skills ========== -->
-          </div>
-          <!-- end -->
-        </div>
-      </div>
-      <!-- end  -->
-
-      <!-- experience  -->
-      <div class="row">
-        <div class="experience tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <!-- time line items  -->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>Oct, 2023 - Mar, 2024</span>
-                    <h3>Jr. Full Stack Developer Intern</h3>
-                    <h4>Appzillians Pvt. Ltd.</h4>
-                    <p>Led backend development for live projects with a team of 6 members, encompassing controller
-                      functions, database migrations, model creation, and route and template design.</p>
-                  </div>
-                </div>
-                <!-- end  -->
-                <!-- time line items  -->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>Sep, 2024 - Present</span>
-                    <h3>Full Stack Web Developer</h3>
-                    <h4>Appzillians Pvt. Ltd.</h4>
-                    <p>Developed Tripo, a full-stack ride and delivery platform combining ride-sharing and courier delivery. Designed dynamic routing and pricing algorithms, built secure APIs with Laravel, and created responsive interfaces using Vue.js and Tailwind CSS. Managed database design, user authentication, and API testing, ensuring efficient and user-friendly functionality across all platform features.</p>
-                  </div>
-                </div>
-
-                <!-- end  -->
-                <!-- time line items  -->
-                <!-- <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-briefcase icon"></i>
-                    <span>Aug, 2021</span>
-                    <h3>Web Designer</h3>
-                    <h4>Web Developer</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, nostrum quibusdam. Dolor
-                      aut tempora eligendi.</p>
-                  </div>
                 </div> -->
 
-                <!-- end  -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--experience end -->
 
-      <!-- education start -->
-      <div class="row">
-        <div class="education tab-content">
-          <div class="row">
-            <div class="timeline">
-              <div class="row">
-                <!-- time line items  -->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <span>2019 - 2023</span>
-                    <h3>Graduation - B.tech CSE</h3>
 
-                    <p>College: Aliah University(Newtown Kolkata).</p>
-                  </div>
+                <!-- Project section -->
+                <div class="row portfolio-items portfolio-block" data-type="projects">
+                    <!-- ========== Start portfolio item ========== -->
+                    <div class="portfolio-item" data-category="web-application">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-image">
+                                <img src="./portfolio-page/img/projects/project-1/1.png" alt="portfolio">
+                                <span class="view-project">View Project</span>
+                            </div>
+                            <p class="portfolio-item-title">Emazon</p>
+                            <div class="portfolio-item-details">
+                                <div class="row details-row">
+                                    <div class="description">
+                                        <h3>Project brief: </h3>
+                                        <p>Developed a full-stack e-commerce platform for apparels using Laravel and Vue, showcasing expertise in backend and frontend technologies.</p>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Project info</h3>
+                                        <ul>
+                                            <li>Date - <span>2023</span></li>
+                                            <li>Tools - <span>PHP, Laravel, Tailwind CSS & Vue.js </span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== End portfolio item ========== -->
+                    <!-- ========== Start portfolio item ========== -->
+                    <div class="portfolio-item" data-category="web-application">
+                        <div class="portfolio-item-inner outer-shadow">
+                            <div class="portfolio-item-image">
+                                <img src="./portfolio-page/img/projects/project-2/1.png" alt="portfolio">
+                                <span class="view-project">View Project</span>
+                            </div>
+                            <p class="portfolio-item-title">WanderLust</p>
+                            <div class="portfolio-item-details">
+                                <div class="row details-row">
+                                    <div class="description">
+                                        <h3>Project brief: </h3>
+                                        <p>Developed an Airbnb clone to learn full-stack development.</p>
+                                    </div>
+                                    <div class="info">
+                                        <h3>Project info</h3>
+                                        <ul>
+                                            <li>Date - <span>2024</span></li>
+                                            <li>Tools - <span>Html, CSS, JavaScript, MongoDB, Express.js, Node.js</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ========== End portfolio item ========== -->
                 </div>
 
-                <!-- end  -->
-                <!-- time line items  -->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <span>2019</span>
-                    <h3>Higher Secondary - 12th</h3>
+                <div class="portfolio-block" data-type="certificates">
 
-                    <p>School: Hazinagar Adarsha Hindi Vidyalaya.</p>
-                  </div>
                 </div>
 
-                <!-- end  -->
-                <!-- time line items  -->
-                <div class="timeline-item">
-                  <div class="timeline-item-inner outer-shadow">
-                    <i class="fas fa-graduation-cap icon"></i>
-                    <span>2017</span>
-                    <h3>Madhyamik - 10th</h3>
+                <!-- <div class="portfolio-block" data-type="youtube">
 
-                    <p>School: Hazinagar Adarsha Hindi Vidyalaya.</p>
-                  </div>
+                </div> -->
+
+            </div>
+        </section>
+
+        <!-- Portfolio Section Ends Here -->
+
+        <!-- Contact Section Starts Here -->
+        <section id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="section-subtitle">I’m always excited to connect with individuals and businesses looking to turn ideas into reality. Whether you’re in need of a full-stack developer for your next project, need help with a digital marketing strategy, or have any questions, feel free to reach out!</p>
+            <div class="contact-container">
+                <div class="left-panel">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-user"></i></div>
+                                <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-envelope"></i></div>
+                                <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mobile Number</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fas fa-phone"></i></div>
+                                <input type="tel" maxlength="10" minlength="10" class="form-control" placeholder="Enter your mobile number" name="mobile" id="mobile" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <div class="input-group">
+                                <div class="input-icon"><i class="fa-regular fa-comment"></i></div>
+                                <textarea class="form-control" placeholder="Enter your message" name="message" id="message" required cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="submit-btn">
+                            <p class="form-message"></p>
+                            <button type="submit" id="submit" class="btn-1 outer-shadow outer-shadw hover-in-shadow submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                        </div>
+                    </form>
                 </div>
-
-                <!-- end  -->
-              </div>
+                <!-- <div class="right-panel">
+                    <iframe src="https://www.google.com/maps/dir/22.917396,88.4021674/Kolkata,+West+Bengal+743135/@22.9147609,88.4042108,17z/data=!4m9!4m8!1m1!4e1!1m5!1m1!1s0x39f89416b456a1c3:0x2146a908739bb003!2m2!1d88.4113593!2d22.9123841?entry=ttu&g_ep=EgoyMDI1MDgxMC4wIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> -->
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- education end -->
+        </section>
+        <!-- Contact Section Ends Here -->
+    </main>
 
-    </div>
-  </section>
-  <!-- end  -->
-
-  <!-- ========== Start service section ========== -->
-
-  <div class="service-section section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <div class="data-heading">Services</div>
-          <h2>What i do</h2>
-        </div>
-      </div>
-      <div class="row">
-        <!-- ========== Start service item ========== -->
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-mobile-alt"></i>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Azaz Mohammad. All Rights Reserved.</p>
+            <p>Designed and Developed by <a href="#">Azaz Mohammad</a></p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/azaz-mohammad/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Azaz50" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://wa.me/6290332250" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:azazmohammad14@gmail.com" aria-label="Gmail">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
-            <h3>Responsive design</h3>
-            <p>Responsive design ensures websites automatically adjust and look good on all devices, from desktops to
-              smartphones. It uses flexible layouts, images, and CSS media queries to adapt to different screen sizes.
-            </p>
-          </div>
         </div>
-
-
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-laptop-code"></i>
-            </div>
-            <h3>Web design</h3>
-            <p>Transforming Idea Into Visually Stunning And User-Friendly Websites, Combining Aesthetics With
-              Functionality For A Captivity Online Presence.</p>
-          </div>
+        <div class="footer-bottom">
+            <p>545 R.B.C Road Post-Hazinagar Nayabazar, Dist- North 24 Paragana, Naihati, Pin- 743135, Kolkata, West Bengal, India</p>
         </div>
-
-
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-palette"></i>
-            </div>
-            <h3>UI/UX Design</h3>
-            <p>I offer services including user research, wireframing, and prototyping to create intuitive and engaging
-              interfaces. I focus on enhancing user satisfaction by improving usability, accessibility, and interaction
-              design.</p>
-          </div>
-        </div>
-
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-code"></i>
-            </div>
-            <h3>Backend Development</h3>
-            <p>I offer services such as building robust server-side applications, database design and management, and
-              API development. I ensure secure, efficient, and scalable solutions using technologies like Node.js,
-              Express, and MongoDB.</p>
-          </div>
-        </div>
-
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-search"></i>
-            </div>
-            <h3>Clean Code</h3>
-            <p>Commited To Writting Clean And Maintainable Code, Ensuring Efficiency, Reliability, and Scalability in
-              Every Project.
-
-            </p>
-          </div>
-        </div>
-
-        <div class="service-item card" data-tilt data-tilt-scale="1.1">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class="fas fa-bullhorn"></i>
-            </div>
-            <h3>Tech Guide(Documentation)</h3>
-            <p>Providing Insightful Tutorial And Tech Guides To Empower Others With Knowledge, Fostering Learnig And
-              Growth In Tech Community</p>
-          </div>
-        </div>
-
-        <!-- ========== End service item ========== -->
-      </div>
-    </div>
-  </div>
-  <!-- ========== End service section ========== -->
-
-
-  <!-- ========== Start portfolio section ========== -->
-  <section class="portfolio-section section" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <div class="data-heading">portfolio</div>
-          <h2>Latest Works</h2>
-        </div>
-      </div>
-      <!-- ========== Start portfolio filter========== -->
-      <div class="row">
-        <div class="portfolio-filter">
-          <span class="filter-item outer-shadow active" data-target="all">All</span>
-          <span class="filter-item" data-target="web-application">Web application</span>
-          <!-- <span class="filter-item" data-target="photoshop">photoshop</span>
-          <span class="filter-item" data-target="mobile-app">mobile app</span>
-          <span class="filter-item" data-target="e-commerce">e commerce</span> -->
-        </div>
-      </div>
-      <!-- ========== End portfolio filter========== -->
-
-      <!-- ========== Start portfolio items ========== -->
-      <div class="row portfolio-items">
-        <!-- ========== Start portfolio item ========== -->
-        <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-image">
-              <img src="img/portfolio/thumb/project-1.jpeg" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png, 
-                        img/portfolio/large/project-1/2.png,
-                        img/portfolio/large/project-1/3.png,
-                        img/portfolio/large/project-1/4.png,
-                        img/portfolio/large/project-1/5.png,
-                        img/portfolio/large/project-1/6.png" ,>
-
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">Emazon</p>
-            <!-- ========== Start portfolio item details ========== -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project brief: </h3>
-                  <p>Developed a full-stack e-commerce platform for apparels using Laravel and Vue, showcasing expertise
-                    in backend and frontend technologies.</p>
-                </div>
-                <div class="info">
-                  <h3>Project info</h3>
-                  <ul>
-                    <li>Date - <span>2023</span></li>
-                    <li>Tools - <span>PHP, Laravel, Tailwind CSS & Vue.js </span></li>
-                    <!-- <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li> -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- ========== End portfolio item details ========== -->
-          </div>
-        </div>
-        <!-- ========== End portfolio item ========== -->
-        <!-- ========== Start portfolio item ========== -->
-        <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-image">
-              <img src="img/portfolio/thumb/project-2.jpeg" alt="portfolio" data-screenshots="img/portfolio/large/project-2/1.png, 
-                        img/portfolio/large/project-2/2.png">
-
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">WanderLust</p>
-            <!-- ========== Start portfolio item details ========== -->
-            <div class="portfolio-item-details">
-              <div class="row">
-                <div class="description">
-                  <h3>Project brief: </h3>
-                  <p>Developed an Airbnb clone to learn full-stack development.</p>
-                </div>
-                <div class="info">
-                  <h3>Project info</h3>
-                  <ul>
-                    <li>Date - <span>2024</span></li>
-                    <!-- <li>Client - <span>xyz</span></li> -->
-                    <li>Tools - <span>Html, CSS, JavaScript, MongoDB, Express.js, Node.js</span></li>
-                    <!-- <li>Web - <span><a href="#" id="link" target="_next">www.morsed.com/project_name</a></span></li> -->
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- ========== End portfolio item details ========== -->
-          </div>
-        </div>
+    </footer>
 
 
 
-      </div>
-  </section>
-  <!-- ========== End portfolio section ========== -->
 
-  <!-- ========== Start contact section ========== -->
-  <section class="contact-section section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <div class="data-heading">contact</div>
-          <h2>Get In Touch</h2>
-        </div>
-      </div>
-      <div class="row">
-        <!-- ========== Start contact item ========== -->
-        <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-phone">
-              <span class="contact-span">Phone</span>
-              <p class="contact-p">+91 629033XXXX</p>
-            </i>
-          </div>
-        </div>
-        <!-- ========== End contact item ========== -->
-        <!-- ========== Start contact item ========== -->
-        <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-envelope">
-              <span class="contact-span">Email Address</span>
-              <p class="contact-p">azazmohammad14@gmail.com</p>
-            </i>
-          </div>
-        </div>
-        <!-- ========== End contact item ========== -->
-        <!-- ========== Start contact item ========== -->
-        <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-map-marker-alt">
-              <span class="contact-span">Address</span>
-              <p class="contact-p">Kolkata, West Bengal</p>
-            </i>
-          </div>
-        </div>
-        <!-- ========== End contact item ========== -->
-      </div>
-      <!-- ========== Start contact from ========== -->
-      <div class="row">
-        <div class="contact-form">
-          <form id="contact-form">
-            <input type="hidden" name="access_key" value="5682fa48-f05c-4638-9881-a21b6657f2ad">
-            <input type="hidden" name="from_name" value="Portfolio Contact Form">
-            <input type="hidden" name="to" value="azazmohammad14@gmail.com">
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            
-            <div class="row">
-              <div class="w-50">
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="text" placeholder="Name" class="input-control" name="name" required>
-                </div>
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="email" placeholder="Email" class="input-control" name="email" required>
-                </div>
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <input type="text" placeholder="Subject" class="input-control" name="subject" required>
-                </div>
-              </div>
-              <div class="w-50">
-                <div class="input-group outer-shadow hover-in-shadow">
-                  <textarea class="input-control" placeholder="Message" name="message" required></textarea>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="submit-btn">
-                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <!-- ========== End contact from ========== -->
-    </div>
-  </section>
-  <!-- ========== End contact section ========== -->
+    <!-- Jquery -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="./portfolio-page/js/jquery.min.js"></script>
+    <!-- Typing Library -->
+    <script src="./portfolio-page/js/aos.js"></script>
+    <script src="./portfolio-page/js/app.js?v=1.2"></script>
 
-  <!-- ========== Start portfolio popup ========== -->
-  <div class="pp portfolio-popup">
-    <div class="pp-details">
-      <div class="pp-details-inner">
-        <div class="pp-title">
-          <h2>personal portfolio</h2>
-          <p>Category - <span class="pp-project-category">Web Application</span></p>
-        </div>
-        <div class="pp-project-details">
-          <div class="row">
-            <div class="description">
-              <h3>Project brief: </h3>
-              <p>Lorem ipsum dolor, sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem perferendis
-                corporis culpa! amet consectetur adipisicing elit. Hic doloribus labore assumenda nostrum commodi.
-                Officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt.</p>
-            </div>
-            <div class="info">
-              <h3>Project info</h3>
-              <ul>
-                <li>Date - <span>2021</span></li>
-                <li>Client - <span>xyz</span></li>
-                <li>Tools - <span>html, css, js</span></li>
-                <li>Web - <span><a href="#" id="link" id="link" target="_next">www.morsed.com/project_name</a></span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="separator"></div>
-
-    <div class="pp-main">
-      <div class="pp-main-inner">
-        <div class="pp-project-details-btn outer-shadow hover-in-shadow">Project Details<i class="fas fa-plus"></i>
-        </div>
-        <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
-        <img src="img/portfolio/large/project-1/1.png" alt="img" class="pp-img outer-shadow">
-        <div class="pp-counter">1 of 6</div>
-      </div>
-      <div class="pp-loader">
-        <div class="loader"></div>
-      </div>
-      <!-- ========== Start pp navigation ========== -->
-      <div class="pp-pre"><i class="fas fa-play"></i></div>
-      <div class="pp-next"><i class="fas fa-play"></i></div>
-      <!-- ========== End pp navigation ========== -->
-    </div>
-  </div>
-  <!-- ========== End portfolio popup ========== -->
-
-  <!-- ========== Start style switciher start - for demo pirposs only ========== -->
-  <div class="style-switcher outer-shadow">
-    <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
-      <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon outer-shadow hover-in-shadow">
-      <i class="fas fa-moon"></i>
-    </div>
-
-    <h4>Theme Color</h4>
-    <div class="colors">
-      <span class="color-1" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" data-tilt data-tilt-scale="1.1" onclick="setActiveStyle('color-5')"></span>
-    </div>
-  </div>
-  <!-- ========== End style switciher start - for demo pirposs only ========== -->
-  <!-- main js -->
-  <script src="js/main.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js'></script>
-  <!-- style switcher js -->
-  <script src="js/style-switcher.js"></script>
-  <script src="js/animation.js"></script>
-  <script src="js/contact.js"></script>
-  <script src="js/glassmorphism-animation.js"></script>
-  <script src="js/autoTypingAnimation.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    VanillaTilt.init(document.querySelectorAll(".contact-card"), {
-      max: 25,
-      speed: 400
-    });
-
-    VanillaTilt.init(document.querySelectorAll(".link-card"), {
-      max: 25,
-      speed: 400
-    });
-
-    VanillaTilt.init(document.querySelectorAll(".card")), {
-      max: 25,
-      speed: 300
-    };
-  </script>
-  <script src="js/particles.js"></script>
-  <script src="js/shape3d.js"></script>
+    <!-- Mobile navbar toggle -->
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const headerNav = document.querySelector('.header-nav');
+      navToggle.addEventListener('click', function(){
+        headerNav.classList.toggle('open');
+      });
+      document.querySelectorAll('.header-ul li a').forEach(function(link){
+        link.addEventListener('click', function(){
+          headerNav.classList.remove('open');
+        });
+      });
+    </script>
 </body>
 
 </html>
