@@ -1,308 +1,142 @@
 {
     "projects": [
         {
-            "title": "Spark Quest 3.0",
-            "description": "Description 1",
-            "url": "https://sparkquest.live/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/1.png",
+            "title": "Emazon",
+            "description": "Developed a full-stack e-commerce platform for apparels using Laravel and Vue, showcasing expertise in backend and frontend technologies.",
+            "url": "",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/1.png",
             "tools" : [
                 "Laravel",
-                "Bootstrap",
-                "Javascript"
+                "Vue.js",
+                "HTML & CSS"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-1/6.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/1.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/2.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/3.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/4.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/5.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-1/6.png"
             ]
         },
         {
-            "title": "TIH College Space",
-            "description": "Description 1",
-            "url": "https://sparkquest.live/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/1.png",
+            "title": "Wanderlust",
+            "description": "Developed an Airbnb clone to learn full-stack development.",
+            "url": "",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-2/1.png",
             "tools" : [
-                "Php",
-                "Bootstrap",
-                "Javascript"
+                "Node Js",
+                "Express Js",
+                "Tailwind CSS",
+                "React Js"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-4/6.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-2/1.png"
             ]
         },
         {
-            "title": "E-Commerce Website",
-            "description": "Description 1",
-            "url": "https://sparkquest.live/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/1.png",
+            "title": "Tsui AutoPay",
+            "description": "Tsui AutoPay is a web application that automates the payment process for users, allowing them to set up recurring payments for various services.",
+            "url": "https://play.google.com/store/apps/details?id=com.tusi.autopay",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-3/1.png",
             "tools" : [
                 "React Js",
                 "Express Js",
                 "Node Js",
-                "Mongodb"
+                "Mysql"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-3/6.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-3/1.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-3/2.png"
             ]
         },
         {
-            "title": "Techhub",
-            "description": "Description 1",
+            "title": "Tsui Finance Locker",
+            "description": "Tsui Finance Locker is a web application and App application that manage Retailer Codes and device in one place.",
             "url": "https://sparkquest.live/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/1.png",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/1.png",
+            "tools" : [
+                "Node Js",
+                "Express Js",
+                "React Js",
+                "Mysql"
+            ],
+            "screenshots" : [
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/1.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/2.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/3.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/4.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/5.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-4/6.png"
+            ]
+        },
+        {
+            "title": "Tripo",
+            "description": "Developed a full-stack application similar to Ola/Uber with an additional feature for courier delivery.",
+            "url": "",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/1.png",
             "tools" : [
                 "Laravel",
-                "Bootstrap",
-                "Javascript"
+                "HTML & CSS",
+                "Vue.js",
+                "Mysql"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-7/6.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/1.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/2.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/3.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/4.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/5.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-5/6.png"
             ]
         },
         {
-            "title": "Banking Management System",
-            "description": "Description 1",
-            "url": "https://sparkquest.live/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/1.png",
+            "title": "CloudToVoice Tracker",
+            "description": "CloudToVoice Tracker is a web application that allows users to track their calls and manage their call history efficiently.",
+            "url": "",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/2.png",
             "tools" : [
                 "Laravel",
-                "Bootstrap",
-                "Javascript"
+                "HTML & CSS",
+                "Vue.js",
+                "Mysql"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-8/6.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/1.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/2.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/3.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/4.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/5.png",
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-6/6.png"
             ]
         },
         {
-            "title": "My Portfolio",
-            "description": "Description 1",
-            "url": "https://imronit2001.github.io/ronit/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/2.png",
+            "title": "Ramadan App",
+            "description": "A mobile application designed to help users track their Ramadan activities, including prayer times, Quran readings, and daily reminders.",
+            "url": "https://ramadan-app-2025.netlify.app/",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-7/1.png",
             "tools" : [
-                "Html",
-                "Css",
-                "Bootstrap",
-                "Javascript"
+                "Laravel",
+                "HTML & CSS",
+                "Vue.js",
+                "Mysql"
             ],
             "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/1.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/2.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/3.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/4.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/5.png",
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-9/6.png"
-            ]
-        },
-        {
-            "title": "TaskCraft - Todo App",
-            "description": "Description 1",
-            "url": "https://imronit2001.github.io/ronit/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-10/1.png",
-            "tools" : [
-                "React Native"
-            ],
-            "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-10/1.png"
-            ]
-        },
-        {
-            "title": "Calculator",
-            "description": "Description 1",
-            "url": "https://imronit2001.github.io/ronit/",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-11/1.png",
-            "tools" : [
-                "React Native"
-            ],
-            "screenshots" : [
-                "https://imronit2001.github.io/ronit/portfolio-page/img/projects/project-11/1.png"
+                "https://github.com/Azaz50/portfolio/portfolio-page/img/projects/project-7/1.png"
             ]
         }
     ],
     "certificates" : [
         {
-            "title": "A Job ready bootcamp in C++, DSA, IOT",
-            "organization": "iNeuron",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/1.png"
+            "title": "DSA with Java",
+            "organization": "Apna College",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/certificates/1.pdf"
         },
         {
-            "title": "Java SE",
-            "organization": "Mysirg",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/2.png"
-        },
-        {
-            "title": "Digital Marketing",
-            "organization": "Nptel",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/3.png"
-        },
-        {
-            "title": "The joy of computing using Python",
-            "organization": "Nptel",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/4.png"
-        },
-        {
-            "title": "Programming for Everybody: Python",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/5.png"
-        },
-        {
-            "title": "Python Data Structures",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/6.png"
-        },
-        {
-            "title": "Python and Statistics for Financial Analysis",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/7.png"
-        },
-        {
-            "title": "AI for Everyone",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/8.png"
-        },
-        {
-            "title": "A Crash Course in Data Science",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/9.png"
-        },
-        {
-            "title": "Introduction to HTML5",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/10.png"
-        },
-        {
-            "title": "Introduction to CSS3",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/11.png"
-        },
-        {
-            "title": "Interactivity with JavaScript",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/12.png"
-        },        
-        {
-            "title": "Responsive Website Basics",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/13.png"
-        },        
-        {
-            "title": "Advanced Styling with Responsive Design",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/14.png"
-        },        
-        {
-            "title": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
-            "organization": "Coursera",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/15.png"
-        },
-        {
-            "title": "Basic Computer",
-            "organization": "Youth",
-            "cover":"https://imronit2001.github.io/ronit/portfolio-page/img/certificates/16.png"
+            "title": "Mern stack Development",
+            "organization": "Apna College",
+            "cover":"https://github.com/Azaz50/portfolio/portfolio-page/img/certificates/2.pdf"
         }
-    ],
-    "youtube" : [
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/9m-YRfCjo0g?si=yOv90MAjPEY_iUHm"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/JmI1Wi8X0gs?si=yBzBdpkm7SNmQUHb"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/tVeUJWGwuMk?si=pX1ONX-tLtQo63BA"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/npMIzf1pS1Y?si=j5yx6bW0_YLbMGQk"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/0MZQPCj1mP4?si=3Ux9sEnkZz1vKuvt"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/RrteTgpWGIA?si=qxoLjGtof-J3hGoe"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/QoUNt_86UGg?si=yeDrcWlHR-W85Apx"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/3tOqWqSreWU?si=BQPrTIfBkoM4RnP3"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/J8Rzr-Euyko?si=aYGpS5L7GqS4Hhk1"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/64kWpNy7LLw?si=4qfLqeHwp2zYllhl"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/m21NMhvv6wE?si=ZwCsGvbSJKESyBgu"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/fh-kzE806-w?si=YXldJ_XPUOywA6wJ"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/_gIdMDisoKk?si=jRF-SU0Ei-yDcoQt"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/1i5y2GPoKpA?si=VDRhDweUwkcocVJD"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/3knBRndM45E?si=rvzh03BuP1qVRVy4"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/EaIdp8ahOZw?si=RZCSHtO_OiWZAQQz"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/IAp5ENGUzXo?si=scu5QbOoZS2BA955"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/_MfAlfYL81Q?si=YZtMRj9kwWv_Smol"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/T_14ei0pvVk?si=poQkIW-4MQAgYl3y"
-        },
-        {
-            "title": "Introduction to Api",
-            "url": "https://youtu.be/_Z0fRk5eIFo?si=OTb0zH-blaZ37PkX"
-        }
+       
     ]
 }

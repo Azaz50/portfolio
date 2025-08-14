@@ -1,87 +1,39 @@
-// Portfolio tab toggle system
-const navItems = document.querySelectorAll('.portfolio-nav-item');
-const blocks = document.querySelectorAll('.portfolio-block');
-navItems.forEach(function(nav){
-  nav.addEventListener('click', function(){
-    // Toggle active class only on clicked nav item
-    navItems.forEach(function(n){ n.classList.remove('active'); });
-    nav.classList.toggle('active');
-    const type = nav.getAttribute('data-type');
-    blocks.forEach(function(block){
-      if(block.getAttribute('data-type') === type){
-        block.classList.toggle('active');
-      } else {
-        block.classList.remove('active');
-      }
-    });
-  });
-});
-
-// Portfolio item details toggle system
-document.querySelectorAll('.portfolio-item-image, .view-project').forEach(function(el){
-  el.addEventListener('click', function(e){
-    var item = el.closest('.portfolio-item');
-    // Toggle active class on clicked item
-    if(item.classList.contains('active')){
-      item.classList.remove('active');
-    } else {
-      document.querySelectorAll('.portfolio-item').forEach(function(i){
-        i.classList.remove('active');
-      });
-      item.classList.add('active');
-    }
-    e.stopPropagation();
-  });
-});
-
-// Close details if clicked outside
-document.addEventListener('click', function(e){
-  if(!e.target.closest('.portfolio-item')){
-    document.querySelectorAll('.portfolio-item').forEach(function(i){
-      i.classList.remove('active');
-    });
-  }
-});
-
-
-
-
 $(document).ready(function() {
   // import json file
-  $.getJSON("https://imronit2001.github.io/ronit/portfolio-page/js/projects.json?v=1.2", function(data) {
+  $.getJSON("https://github.com/Azaz50/portfolio/portfolio-page/js/projects.json?v=1.2", function(data) {
     let projects = data.projects; // Ensure projects is only available here
     let certificates = data.certificates;
     let youtube = data.youtube;
     youtube = [];
 
     // Now that projects is loaded, append them to the portfolio-block
-    // projects.forEach(project => {
-    //   $(".portfolio-block[data-type=projects]").append(`
-    //             <div class="card">
-    //                 <div class="card-body">
-    //                     <img src="${project.cover}" alt="">
-    //                     <h5 class="card-title">${project.title}</h5>
-    //                 </div>
-    //             </div>
-    //         `);
-    // });
+    projects.forEach(project => {
+      $(".portfolio-block[data-type=projects]").append(`
+                <div class="card">
+                    <div class="card-body">
+                        <img src="${project.cover}" alt="">
+                        <h5 class="card-title">${project.title}</h5>
+                    </div>
+                </div>
+            `);
+    });
 
-    // let y = 0;
-    // // Now that projects is loaded, append them to the portfolio-block
-    // certificates.forEach(project => {
-    //   y++;
-    //   if (y > 8) {
-    //     return;
-    //   }
-    //   $(".portfolio-block[data-type=certificates]").append(`
-    //             <div class="card" data-index="${y}">
-    //                 <div class="card-body">
-    //                     <div class="certificate-div"><img src="${project.cover}" alt=""></div>
-    //                     <h5 class="card-title">${project.title}</h5>
-    //                 </div>
-    //             </div>
-    //         `);
-    // });
+    let y = 0;
+    // Now that projects is loaded, append them to the portfolio-block
+    certificates.forEach(project => {
+      y++;
+      if (y > 8) {
+        return;
+      }
+      $(".portfolio-block[data-type=certificates]").append(`
+                <div class="card" data-index="${y}">
+                    <div class="card-body">
+                        <div class="certificate-div"><img src="${project.cover}" alt=""></div>
+                        <h5 class="card-title">${project.title}</h5>
+                    </div>
+                </div>
+            `);
+    });
   });
 
   $(".portfolio-nav-item").on("click", function() {
@@ -93,7 +45,7 @@ $(document).ready(function() {
 
     if (selector == "youtube") {
       // import json file
-      $.getJSON("https://imronit2001.github.io/ronit/portfolio-page/js/projects.json?v=1.2", function(data) {
+      $.getJSON("https://github.com/Azaz50/portfolio/portfolio-page/js/projects.json?v=1.2", function(data) {
         let youtube = data.youtube;
         let x = 0;
         // Now that projects is loaded, append them to the portfolio-block
@@ -129,7 +81,7 @@ $(document).ready(function() {
 
     if (selector == "certificates") {
       // import json file
-      $.getJSON("https://imronit.in/portfolio-page/js/projects.json?v=1.2", function(
+      $.getJSON("https://github.com/Azaz50/portfolio/portfolio-page/js/projects.json?v=1.2", function(
         data
       ) {
         let certificates = data.certificates;
@@ -198,7 +150,7 @@ $(document).ready(function() {
     // Send data using Ajax
     $.ajax({
       type: "POST",
-      url: "http://imronit.in/portfolio-page/php/contact.php",
+      url: "http://github.com/Azaz50/portfolio/portfolio-page/php/contact.php",
       data: {
         name: name,
         email: email,
