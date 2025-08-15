@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // import json file
-  $.getJSON("https://github.com/Azaz50/portfolio/tree/main/portfolio-page/js/projects.json?v=1.2", function(data) {
+  $.getJSON("https://azaz50.github.io/portfolio/portfolio-page/js/projects.json?v=1.2", function(data) {
     let projects = data.projects; // Ensure projects is only available here
     let certificates = data.certificates;
     let youtube = data.youtube;
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
     if (selector == "youtube") {
       // import json file
-      $.getJSON("https://github.com/Azaz50/portfolio/tree/main/portfolio-page/js/projects.json?v=1.2", function(data) {
+      $.getJSON("https://azaz50.github.io/portfolio/portfolio-page/js/projects.json?v=1.2", function(data) {
         let youtube = data.youtube;
         let x = 0;
         // Now that projects is loaded, append them to the portfolio-block
@@ -81,7 +81,7 @@ $(document).ready(function() {
 
     if (selector == "certificates") {
       // import json file
-      $.getJSON("https://github.com/Azaz50/portfolio/tree/main/portfolio-page/js/projects.json?v=1.2", function(
+      $.getJSON("https://azaz50.github.io/portfolio/portfolio-page/js/projects.json?v=1.2", function(
         data
       ) {
         let certificates = data.certificates;
