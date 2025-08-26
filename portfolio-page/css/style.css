@@ -475,7 +475,7 @@ section>.section-title:before {
 
 }
 
-.services-container .card:nth-of-type(1) .card-body {
+/* .services-container .card:nth-of-type(1) .card-body {
     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
 }
 
@@ -497,6 +497,30 @@ section>.section-title:before {
 
 .services-container .card:nth-of-type(6) .card-body {
     background: linear-gradient(135deg, #00c6ff 0%, #0072ff 100%);
+} */
+
+.services-container .card:nth-of-type(1) .card-body {
+    background: linear-gradient(135deg, #ffe3e8 0%, #ffece6 100%);
+}
+
+.services-container .card:nth-of-type(2) .card-body {
+    background: linear-gradient(135deg, #ffd6f5 0%, #f7c6e6 100%);
+}
+
+.services-container .card:nth-of-type(3) .card-body {
+    background: linear-gradient(135deg, #d6ffe6 0%, #d6fff9 100%);
+}
+
+.services-container .card:nth-of-type(4) .card-body {
+    background: linear-gradient(135deg, #ffe6d6 0%, #fff3d6 100%);
+}
+
+.services-container .card:nth-of-type(5) .card-body {
+    background: linear-gradient(135deg, #ffe6df 0%, #fff2e0 100%);
+}
+
+.services-container .card:nth-of-type(6) .card-body {
+    background: linear-gradient(135deg, #e6f7ff 0%, #e0eaff 100%);
 }
 
 
