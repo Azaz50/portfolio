@@ -473,7 +473,6 @@
                                 <input type="text" class="form-control" placeholder="Enter your name" name="name" id="name" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label>Email</label>
                             <div class="input-group">
@@ -481,7 +480,6 @@
                                 <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label>Mobile Number</label>
                             <div class="input-group">
@@ -489,7 +487,6 @@
                                 <input type="tel" maxlength="10" minlength="10" class="form-control" placeholder="Enter your mobile number" name="mobile" id="mobile" required>
                             </div>
                         </div>
-
                         <div class="form-group">
                             <label>Message</label>
                             <div class="input-group">
@@ -497,7 +494,6 @@
                                 <textarea class="form-control" placeholder="Enter your message" name="message" id="message" required cols="30" rows="10"></textarea>
                             </div>
                         </div>
-
                         <div class="submit-btn">
                             <p class="form-message"></p>
                             <button type="submit" id="submit" class="btn-1 outer-shadow outer-shadw hover-in-shadow submit"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
@@ -544,6 +540,27 @@
     <!-- Typing Library -->
     <script src="./portfolio-page/js/aos.js"></script>
     <script src="./portfolio-page/js/app.js?v=1.2"></script>
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const form = event.target;
+        const formData = new FormData(form);
+        const response = await fetch('./portfolio-page/php/contact.php', {
+            method: 'POST',
+            body: formData
+        });
+        const result = await response.json();
+        const messageElem = form.querySelector('.form-message');
+        if (result.status === 'success') {
+            messageElem.textContent = result.message;
+            messageElem.style.color = 'green';
+            form.reset();
+        } else {
+            messageElem.textContent = result.message;
+            messageElem.style.color = 'red';
+        }
+    });
+    </script>
 </body>
 
 </html>
