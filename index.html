@@ -545,7 +545,7 @@
         event.preventDefault();
         const form = event.target;
         const formData = new FormData(form);
-        const response = await fetch('./portfolio-page/php/contact.php', {
+        const response = await fetch('https://azaz50.github.io/portfolio/portfolio-page/php/contact.php', {
             method: 'POST',
             body: formData
         });
