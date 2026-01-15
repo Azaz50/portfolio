@@ -33,7 +33,7 @@
 <h3> Backend </h3>
 <div align="center">  
 <img style="margin: 10px" src="./portfolio-page/img/icons/nodejs.png" alt="Node.js" height="50" />  
-<img style="margin: 10px" src="./portfolio-page/img/icons/expressjs.jpg" alt="Express.js" height="50" />  
+<img style="margin: 10px" src="./portfolio-page/img/icons/expressjs.png" alt="Express.js" height="50" />  
 <img style="margin: 10px" src="./portfolio-page/img/icons/js.png" alt="JavaScript" height="50" />  
 <img style="margin: 10px" src="./portfolio-page/img/icons/mysql.png" alt="MYSQL" height="50" />  
 <img style="margin: 10px" src="./portfolio-page/img/icons/mongodb.png" alt="MongoDB" height="50" />  
