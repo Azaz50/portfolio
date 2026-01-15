@@ -44,7 +44,7 @@
 
 <div align="center">  
 <img style="margin: 10px" src="./portfolio-page/img/icons/c.png" alt="C" height="50" />  
-<img style="margin: 10px" src="./portfolio-page/img/icons/cpp.png" alt="C++" height="50" />  
+<!-- <img style="margin: 10px" src="./portfolio-page/img/icons/cpp.png" alt="C++" height="50" />   -->
 <img style="margin: 10px" src="./portfolio-page/img/icons/java.png" alt="Java" height="50" />  
 <img style="margin: 10px" src="./portfolio-page/img/icons/python.png" alt="Python" height="50" />
 <img style="margin: 10px" src="./portfolio-page/img/icons/dsa.png" alt="DSA" height="50" />
