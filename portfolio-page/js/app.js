@@ -317,7 +317,13 @@ $(document).ready(function () {
     if (!project) return;
 
     $("#projectTitle").text(project.title);
-    $("#projectDescription").text(project.description || "");
+    // $("#projectDescription").text(project.description || "");
+    if (project.description && project.description.trim() !== "") {
+      $("#projectDescription").text(project.description).show();
+    } else {
+      $("#projectDescription").hide();
+    }
+
 
     // Carousel Images
     let imagesHtml = "";
