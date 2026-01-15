@@ -1039,3 +1039,26 @@ footer {
     text-decoration: none;
 }
 
+.portfolio-block .card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-block .card:hover {
+  transform: translateY(-6px);
+}
+
+.carousel-inner img {
+  height: 320px;
+  object-fit: cover;
+}
+
+
+.portfolio-block[data-type="projects"] .card {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.portfolio-block[data-type="projects"] .card-body {
+  pointer-events: auto;
+}
