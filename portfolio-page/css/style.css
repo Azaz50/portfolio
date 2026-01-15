@@ -407,7 +407,9 @@ section>.section-title:before {
     padding-bottom: 5px;
     box-shadow: 0 5px 6px -5px #777;
 }
-
+.card-title-600 {
+    font-weight: 600;
+}
 .card-skill-div {
     margin: 20px auto 0px auto;
     display: flex;
