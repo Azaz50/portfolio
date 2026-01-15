@@ -25,7 +25,7 @@
 <img style="margin: 10px" src="./portfolio-page/img/icons/js.png" alt="JavaScript" height="50" />
 <img style="margin: 10px" src="./portfolio-page/img/icons/bootstrap.png" alt="Bootstrap" height="50" />  
 <img style="margin: 10px" src="./portfolio-page/img/icons/tailwind.png" alt="Tailwind CSS" height="50" />
-<img style="margin: 10px" src="./portfolio-page/img/icons/react.png" alt="React" height="50" />  
+<img style="margin: 10px" src="./portfolio-page/img/icons/reactjs.png" alt="React" height="50" />  
 </div>
 
 </div></td><td valign="top" width="33%">
