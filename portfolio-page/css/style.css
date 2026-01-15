@@ -109,6 +109,13 @@ header nav ul li a:hover {
     box-shadow: 0 8px 9px -6px #777;
 }
 
+.dancing-script-700 {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
 /* Header CSS Ends Here */
 
 /* MAIN CSS Starts Here */
@@ -1030,9 +1037,3 @@ footer {
     text-decoration: none;
 }
 
-.dancing-script-700 {
-    font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
