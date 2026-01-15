@@ -1039,7 +1039,7 @@ footer {
     text-decoration: none;
 }
 
-/* .portfolio-block .card {
+.portfolio-block .card {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -1051,14 +1051,14 @@ footer {
 .carousel-inner img {
   height: 320px;
   object-fit: cover;
-} */
+}
 
 
-.portfolio-block[data-type="projects"] .card {
+/* .portfolio-block[data-type="projects"] .card {
   cursor: pointer;
   z-index: 2;
 }
 
 .portfolio-block[data-type="projects"] .card-body {
   pointer-events: auto;
-}
+} */
