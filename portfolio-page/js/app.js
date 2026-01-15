@@ -261,49 +261,44 @@
 //   });
 // });
 
-
 let allProjects = [];
-let allCertificates = [];
-let allYoutube = [];
 
 $(document).ready(function () {
 
-  /* =======================
-     LOAD JSON (ONCE)
-  ======================== */
+  /* =========================
+     LOAD PROJECTS (ONLY ONCE)
+     ========================= */
   $.getJSON(
     "https://azaz50.github.io/portfolio/portfolio-page/js/projects.json?v=2",
     function (data) {
 
       allProjects = data.projects || [];
-      allCertificates = data.certificates || [];
-      allYoutube = data.youtube || [];
+      let certificates = data.certificates || [];
 
-      /* =======================
-         PROJECTS
-      ======================== */
+      // Clear container before append
+      $(".portfolio-block[data-type=projects]").empty();
+
       allProjects.forEach((project, index) => {
         $(".portfolio-block[data-type=projects]").append(`
           <div class="card" data-index="${index}">
             <div class="card-body">
               <img src="${project.cover}" class="img-fluid rounded" alt="${project.title}">
-              <h5 class="card-title mt-2">${project.title}</h5>
+              <h5 class="card-title mt-2 text-center">${project.title}</h5>
             </div>
           </div>
         `);
       });
 
-      /* =======================
-         CERTIFICATES (LIMIT 8)
-      ======================== */
-      allCertificates.slice(0, 8).forEach((cert, index) => {
+      // Certificates (limit 8)
+      $(".portfolio-block[data-type=certificates]").empty();
+      certificates.slice(0, 8).forEach((cert, i) => {
         $(".portfolio-block[data-type=certificates]").append(`
-          <div class="card" data-index="${index}">
+          <div class="card" data-index="${i}">
             <div class="card-body">
               <div class="certificate-div">
                 <img src="${cert.cover}" alt="${cert.title}">
               </div>
-              <h5 class="card-title">${cert.title}</h5>
+              <h5 class="card-title text-center mt-2">${cert.title}</h5>
             </div>
           </div>
         `);
@@ -311,18 +306,20 @@ $(document).ready(function () {
     }
   );
 
-  /* =======================
-     PROJECT MODAL HANDLER
-  ======================== */
+  /* =========================
+     PROJECT CLICK → MODAL
+     ========================= */
   $(document).on("click", ".portfolio-block[data-type=projects] .card", function () {
 
-    const project = allProjects[$(this).data("index")];
+    const index = $(this).data("index");
+    const project = allProjects[index];
+
     if (!project) return;
 
     $("#projectTitle").text(project.title);
-    $("#projectDescription").text(project.description);
+    $("#projectDescription").text(project.description || "");
 
-    /* Screenshots */
+    // Carousel Images
     let imagesHtml = "";
     project.screenshots.forEach((img, i) => {
       imagesHtml += `
@@ -333,94 +330,104 @@ $(document).ready(function () {
     });
     $("#projectImages").html(imagesHtml);
 
-    /* Tools */
-    $("#projectTools").html(
-      project.tools.map(t => `<span class="badge bg-secondary me-2">${t}</span>`).join("")
-    );
+    // Tools
+    let toolsHtml = "";
+    project.tools.forEach(tool => {
+      toolsHtml += `<span class="badge bg-secondary me-2 mb-2">${tool}</span>`;
+    });
+    $("#projectTools").html(toolsHtml);
 
-    /* Live URL */
-    if (project.url) {
+    // Live Link
+    if (project.url && project.url.trim() !== "") {
       $("#projectLink").removeClass("d-none").attr("href", project.url);
     } else {
       $("#projectLink").addClass("d-none");
     }
 
-    new bootstrap.Modal(document.getElementById("projectModal")).show();
+    const modal = new bootstrap.Modal(document.getElementById("projectModal"));
+    modal.show();
   });
 
-  /* =======================
-     PORTFOLIO NAV
-  ======================== */
+  /* =========================
+     PORTFOLIO NAV SWITCH
+     ========================= */
   $(".portfolio-nav-item").on("click", function () {
-
     $(".portfolio-nav-item").removeClass("active");
     $(this).addClass("active");
 
-    const selector = $(this).data("type");
+    const selector = $(this).attr("data-type");
     $(".portfolio-block").removeClass("active");
-    $(`.portfolio-block[data-type=${selector}]`).addClass("active");
-
-    /* YouTube Load (Lazy) */
-    if (selector === "youtube" && allYoutube.length) {
-
-      allYoutube.forEach((vid, i) => {
-
-        if ($(`.portfolio-block[data-type=youtube] .card[data-index=${i}]`).length) return;
-
-        let url = vid.url
-          .replace("https://www.youtube.com/watch?v=", "https://www.youtube.com/embed/")
-          .replace("https://youtu.be/", "https://www.youtube.com/embed/");
-
-        $(".portfolio-block[data-type=youtube]").append(`
-          <div class="card" data-index="${i}">
-            <div class="card-body">
-              <iframe src="${url}" allowfullscreen></iframe>
-            </div>
-          </div>
-        `);
-      });
-    }
+    $(".portfolio-block[data-type=" + selector + "]").addClass("active");
   });
 
-  /* =======================
-     MOBILE NAV
-  ======================== */
+  /* =========================
+     MOBILE NAV TOGGLE
+     ========================= */
   $(".nav-toggle").on("click", function (e) {
     e.stopPropagation();
     $(this).toggleClass("active");
     $(".header-ul").toggleClass("active");
-    $(this).html($(this).hasClass("active")
-      ? "<i class='fa-solid fa-xmark'></i>"
-      : "<i class='fas fa-bars'></i>"
+
+    $(this).html(
+      $(this).hasClass("active")
+        ? "<i class='fa-solid fa-xmark'></i>"
+        : "<i class='fas fa-bars'></i>"
     );
   });
 
-  $(".header-ul a").on("click", function () {
+  $(".header-ul li a").on("click", function () {
     $(".nav-toggle").removeClass("active").html("<i class='fas fa-bars'></i>");
     $(".header-ul").removeClass("active");
   });
 
-  /* =======================
-     SCROLL ACTIVE LINK
-  ======================== */
-  const sections = $("section");
-  const navLinks = $(".header-nav a");
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest("header").length) {
+      $(".nav-toggle").removeClass("active").html("<i class='fas fa-bars'></i>");
+      $(".header-ul").removeClass("active");
+    }
+  });
 
-  $(window).on("scroll", function () {
-    let current = "";
+  /* =========================
+     SCROLL TO HOME
+     ========================= */
+  $("h1").on("click", function () {
+    $("html, body").animate(
+      { scrollTop: $("#home").offset().top },
+      1
+    );
+  });
 
-    sections.each(function () {
-      if ($(window).scrollTop() >= $(this).offset().top - $(this).height() / 3) {
-        current = $(this).attr("id");
+  /* =========================
+     AOS INIT
+     ========================= */
+  AOS.init({
+    duration: 1200,
+    once: true
+  });
+});
+
+/* =========================
+   ACTIVE NAV ON SCROLL
+   ========================= */
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".header-nav a");
+
+  window.addEventListener("scroll", function () {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 200;
+      if (window.scrollY >= sectionTop) {
+        currentSection = section.getAttribute("id");
       }
     });
 
-    navLinks.removeClass("active");
-    navLinks.filter(`[href="#${current}"]`).addClass("active");
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${currentSection}`) {
+        link.classList.add("active");
+      }
+    });
   });
-
-  /* =======================
-     AOS
-  ======================== */
-  AOS.init({ duration: 1200 });
 });
