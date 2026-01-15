@@ -197,7 +197,7 @@ section:not(#home) {
 }
 
 #home .home-main-container .right-panel {
-    width: 50%;
+    width: 60%;
     height: 100%;
     margin: auto;
     display: flex;
@@ -287,7 +287,7 @@ section>.section-title:before {
 }
 
 .about-main-container .left-panel {
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     align-items: center;
