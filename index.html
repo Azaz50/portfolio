@@ -57,17 +57,35 @@
 </head>
 
 <style>
-    .dancing-script-700 {
+.logo-name {
     font-family: "Dancing Script", cursive;
-    font-optical-sizing: auto;
     font-weight: 700;
-    font-style: normal;
-    }
+    font-size: clamp(32px, 4vw, 46px);
+    letter-spacing: 0.5px;
+
+    /* Elegant gradient text */
+    background: linear-gradient(135deg, #1f2937, #2563eb, #0ea5e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Soft depth */
+    text-shadow: 0 2px 12px rgba(37, 99, 235, 0.25);
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* Optional hover effect */
+.logo-name:hover {
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 18px rgba(14, 165, 233, 0.4);
+}
 </style>
+
 
 <body>
     <header>
-        <h1 class="eb-garamond dancing-script-700">Azaz Mohammad</h1>
+        <h1 class="eb-garamond logo-name">Azaz Mohammad</h1>
         <nav class="header-nav">
             <ul class="header-ul">
                 <li><a class="active" href="#home">Home</a></li>
