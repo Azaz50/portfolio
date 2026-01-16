@@ -131,6 +131,24 @@
 .white-text {
     color:#fff
 }
+
+
+/* ===== Mobile Responsiveness (ADD ONLY) ===== */
+@media (max-width: 768px) {
+    #azaz-mohammad {
+        font-size: 2.2rem;
+    }
+
+    .img-box img {
+        max-width: 220px !important;
+    }
+
+    .home-main-container {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
 </style>
 
 
@@ -182,12 +200,12 @@
             </div> -->
 
 
-            <div class="container-fluid min-vh-100 d-flex align-items-center home-main-container bitter-500">
+           <div class="container-fluid min-vh-100 d-flex align-items-center home-main-container bitter-500">
                 <div class="container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center text-center text-lg-start">
 
-                        <!-- RIGHT IMAGE -->
-                        <div class="col-lg-6 col-md-12 text-center">
+                        <!-- IMAGE -->
+                        <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
                             <div class="img-box mx-auto">
                                 <img
                                     src="./portfolio-page/img/profile-pic.jpeg"
@@ -198,8 +216,8 @@
                             </div>
                         </div>
 
-                        <!-- LEFT CONTENT -->
-                        <div class="col-lg-6 col-md-12 mb-5 mb-lg-0" data-aos="zoom-in">
+                        <!-- CONTENT -->
+                        <div class="col-lg-6 col-md-12 order-2 order-lg-1" data-aos="zoom-in">
                             <div class="px-2 px-md-4">
                                 <h5 class="text-primary fw-semibold mb-2">Hello 👋</h5>
 
@@ -211,14 +229,14 @@
                                     Full Stack Developer
                                 </h4>
 
-                                <p class="fs-5 text-secondary mb-4 white-text">
+                                <p class="fs-6 fs-md-5 text-secondary mb-4 white-text">
                                     Building <strong>scalable</strong>, <strong>secure</strong>, and
                                     <strong>high-performance web applications</strong> using modern
                                     technologies like <strong>React, Node.js, Express & Databases</strong>.
                                 </p>
 
-                                <!-- CTA Buttons -->
-                                <div class="d-flex gap-3 flex-wrap">
+                                <!-- CTA -->
+                                <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
                                     <a href="#portfolio" class="btn btn-primary px-4 py-2">
                                         View Projects
                                     </a>
@@ -232,6 +250,7 @@
                     </div>
                 </div>
             </div>
+
 
 
 
