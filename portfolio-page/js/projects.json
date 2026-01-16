@@ -92,7 +92,7 @@
         {
             "title": "Tripo (Industry Project)",
             "description": "Developed a full-stack application similar to Ola/Uber with an additional feature for courier delivery.",
-            "url": "https://tripoapp.com/",
+            "url": "https://tripoapp.com",
             "cover":"https://azaz50.github.io/portfolio/portfolio-page/img/projects/project-5/1.png",
             "tools" : [
                 "Laravel",
@@ -107,7 +107,7 @@
         {
             "title": "CloudToVoice Tracker (Industry Project)",
             "description": "CloudToVoice Tracker is a web application that allows users to track their calls and manage their call history efficiently.",
-            "url": "https://trackermini.cloud2voice.com/",
+            "url": "https://trackermini.cloud2voice.com",
             "cover":"https://azaz50.github.io/portfolio/portfolio-page/img/projects/project-6/2.png",
             "tools" : [
                 "Laravel",
