@@ -149,6 +149,25 @@
     }
 }
 
+/* ===== Hero Buttons Responsive (ADD ONLY) ===== */
+.hero-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+    .hero-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    /* Keep buttons in one line */
+    .home-main-container .d-flex {
+        flex-wrap: nowrap !important;
+    }
+}
+
+
 </style>
 
 
@@ -201,55 +220,54 @@
 
 
             <div class="container-fluid min-vh-100 d-flex align-items-center home-main-container bitter-500">
-                <div class="container">
-                    <div class="row align-items-center text-center text-lg-start">
+    <div class="container">
+        <div class="row align-items-center text-center text-lg-start gx-lg-5">
 
-                        <!-- IMAGE -->
-                        <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
-                            <div class="img-box mx-auto">
-                                <img
-                                    src="./portfolio-page/img/profile-pic.jpeg"
-                                    alt="Azaz Mohammad"
-                                    class="img-fluid rounded-circle shadow-lg"
-                                    style="max-width: 320px;"
-                                >
-                            </div>
-                        </div>
+            <!-- IMAGE SECTION (50%) -->
+            <div class="col-lg-6 col-md-12 order-1 order-lg-2 mb-4 mb-lg-0">
+                <div class="img-box mx-auto mx-lg-0 text-lg-end">
+                    <img
+                        src="./portfolio-page/img/profile-pic.jpeg"
+                        alt="Azaz Mohammad"
+                        class="img-fluid rounded-circle shadow-lg"
+                        style="max-width: 320px;"
+                    >
+                </div>
+            </div>
 
-                        <!-- CONTENT -->
-                        <div class="col-lg-6 col-md-12 order-2 order-lg-1" data-aos="zoom-in">
-                            <div class="px-2 px-md-4">
-                                <h5 class="text-primary fw-semibold mb-2">Hello 👋</h5>
+            <!-- CONTENT SECTION (50%) -->
+            <div class="col-lg-6 col-md-12 order-2 order-lg-1" data-aos="zoom-in">
+                <div class="px-2 px-md-4">
+                    <h5 class="text-primary fw-semibold mb-2">Hello 👋</h5>
 
-                                <h1 id="azaz-mohammad" class="display-5 mb-3 white-text">
-                                    I'm <span class="text-gradient">Azaz Mohammad</span>
-                                </h1>
+                    <h1 id="azaz-mohammad" class="display-5 mb-3 white-text">
+                        I'm <span class="text-gradient">Azaz Mohammad</span>
+                    </h1>
 
-                                <h4 class="mb-4 white-text">
-                                    Full Stack Developer
-                                </h4>
+                    <h4 class="mb-4 white-text">Full Stack Developer</h4>
 
-                                <p class="fs-6 fs-md-5 text-secondary mb-4 white-text">
-                                    Building <strong>scalable</strong>, <strong>secure</strong>, and
-                                    <strong>high-performance web applications</strong> using modern
-                                    technologies like <strong>React, Node.js, Express & Databases</strong>.
-                                </p>
+                    <p class="fs-6 fs-md-5 text-secondary mb-4 white-text">
+                        Building <strong>scalable</strong>, <strong>secure</strong>, and
+                        <strong>high-performance web applications</strong> using modern
+                        technologies like <strong>React, Node.js, Express & Databases</strong>.
+                    </p>
 
-                                <!-- CTA -->
-                                <div class="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
-                                    <a href="#portfolio" class="btn btn-primary px-4 py-2">
-                                        View Projects
-                                    </a>
-                                    <a href="#contact" class="btn btn-outline-primary px-4 py-2">
-                                        Contact Me
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <!-- CTA -->
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-3">
+                        <a href="#portfolio" class="btn btn-primary hero-btn">
+                            View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary hero-btn">
+                            Contact Me
+                        </a>
                     </div>
                 </div>
             </div>
+
+        </div>
+    </div>
+</div>
+
 
 
 
