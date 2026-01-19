@@ -59,6 +59,115 @@
 
 </head>
 
+<style>
+.logo-name {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: clamp(32px, 4vw, 46px);
+    letter-spacing: 0.5px;
+
+    /* Elegant gradient text */
+    background: linear-gradient(135deg, #fff, #fff, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* Soft depth */
+    text-shadow: 0 2px 12px rgba(37, 99, 235, 0.25);
+
+    transition: all 0.3s ease-in-out;
+}
+
+/* Subtle animated glow */
+.logo-name::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    background: radial-gradient(
+        circle,
+        rgba(59,130,246,0.35),
+        rgba(14,165,233,0.25),
+        transparent 70%
+    );
+    filter: blur(18px);
+    z-index: -1;
+    opacity: 0.7;
+    animation: textGlow 2.8s ease-in-out infinite;
+}
+
+/* Optional hover effect */
+.logo-name:hover {
+    letter-spacing: 1px;
+    transform: translateY(-2px);
+    text-shadow: 0 4px 18px rgba(14, 165, 233, 0.4);
+}
+
+/* Glow animation */
+@keyframes textGlow {
+    0%, 100% {
+        opacity: 0.4;
+        transform: scale(0.95);
+    }
+    50% {
+        opacity: 0.85;
+        transform: scale(1.05);
+    }
+}
+
+
+.bitter-500 {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.white-text {
+    color:#fff
+}
+
+/* ===== Mobile Responsiveness (ADD ONLY) ===== */
+@media (max-width: 768px) {
+    #azaz-mohammad {
+        font-size: 2.2rem;
+    }
+
+    .img-box img {
+        max-width: 220px !important;
+    }
+
+    .home-main-container {
+        width: 50%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* ===== Hero Buttons Responsive (ADD ONLY) ===== */
+.hero-btn {
+    padding: 10px 22px;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+    .hero-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+    /* Keep buttons in one line */
+    .home-main-container .d-flex {
+        flex-wrap: nowrap !important;
+    }
+    .imgage-resize {
+        width: 100%;
+        max-width: 170px !important;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+
+</style>
+
 
 <body>
     <header>
